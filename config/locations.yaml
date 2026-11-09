@@ -1,0 +1,15 @@
+# Cities covered by SmogWatch PK.
+# Each city has a bounding box; src/smogwatch/geo/grid.py turns it into a grid of points.
+# Bounding boxes and grid spacing are finalised in Phase 3.
+#
+# Schema (per city):
+#   name:        display name
+#   bbox:        [min_lat, min_lon, max_lat, max_lon]  (decimal degrees, WGS84)
+#   spacing_deg: grid spacing in degrees (0.1 deg ~ 11 km)
+
+grid:
+  default_spacing_deg: 0.1
+
+cities: []
+# Planned: Lahore, Karachi, Islamabad-Rawalpindi, Faisalabad, Gujranwala,
+#          Sialkot, Multan, Peshawar, Quetta, Hyderabad
